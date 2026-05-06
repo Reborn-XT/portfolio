@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Added viewport for college assessment mobile-friendly requirements -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday Madankar - Retro Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* "Neo-Brutalist" Retro Style */
+        body {
+            background-color: #87CEEB;
+            /* Sky blue */
+            font-family: 'Courier New', Courier, monospace;
+            /* Retro tech font */
+            margin: 20px;
+            color: #000;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            border: 4px solid #000;
+            /* Hard shadow - no blur for that retro look */
+            box-shadow: 8px 8px 0px #000;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .main-content {
+            background-color: #fff;
+            padding: 25px;
+            border: 4px solid #000;
+            box-shadow: 10px 10px 0px #000;
+        }
+
+        .profile-pic {
+            width: 180px;
+            border: 4px solid #000;
+            filter: grayscale(20%);
+            /* Slight retro filter */
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            background-color: #ffff00;
+            /* Bright retro yellow highlight */
+            padding: 8px;
+            border: 3px solid #000;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .project-section {
+            border: 3px solid #000;
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 20px 0;
+            box-shadow: 5px 5px 0px #000;
+        }
+
+        .project-img {
+            width: 100%;
+            max-width: 480px;
+            display: block;
+            margin: 12px auto;
+            border: 4px solid #000;
+            box-shadow: 6px 6px 0px #000;
+            filter: grayscale(10%);
+        }
+
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .project-gallery .project-img {
+            margin: 0;
+            /* Override auto margin for gallery */
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .project-tags {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #00ff00;
+            border: 2px solid #000;
+            padding: 2px 8px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+
+        li b {
+            background-color: #e0e0e0;
+            padding: 2px 5px;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Retro Button Style */
+        button {
+            background-color: #00ff00;
+            /* Retro terminal green */
+            padding: 15px 30px;
+            border: 4px solid #000;
+            box-shadow: 4px 4px 0px #000;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+
+        button:active {
+            /* Mimics a physical button press */
+            box-shadow: 0px 0px 0px #000;
+            transform: translate(4px, 4px);
+        }
+
+        a {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .contact-info i {
+            background-color: #ffff00;
+            border: 2px solid #000;
+            padding: 5px;
+            margin-right: 10px;
+            box-shadow: 3px 3px 0px #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>UDAY MADANKAR</h1>
+        <p>[ CIVIL ENGINEERING STUDENT @ MIT AOE ]</p>
+        <p>[ PRN 202501030039]</p>
+    </header>
+
+    <main class="main-content">
+        <h2>> ABOUT_ME</h2>
+        <br><br>
+        <img src="WhatsApp Image 2026-05-06 at 7.35.11 PM.jpeg"
+            class="profile-pic">
+
+        <p>I am <b>Uday Madankar</b>, currently studying Civil Engineering at MIT AOE. I have a passion for integrating
+            <b>3D Modelling</b> and <b>Programming</b> into traditional engineering workflows.
+        </p>
+
+        <h2>> TECHNICAL_SKILLS</h2>
+        <ul>
+            <li><b>LANGUAGES:</b> Basic C, Python</li>
+            <li><b>ENGINEERING:</b> 3D Modelling</li>
+            <li><b>WEB_DEV:</b> HTML & CSS</li>
+        </ul>
+
+        <h2>> FEATURED_PROJECTS</h2>
+        <div class="project-section">
+            <h3>SMART CONCRETE CURING MONITOR</h3>
+            <img src="WhatsApp Image 2025-12-30 at 4.04.33 PM.jpeg"
+                alt="Smart Concrete Curing Monitor - Microcontroller and sensor setup" class="project-img">
+            <p>A technical solution using sensors to monitor concrete hydration. Designed to ensure structural integrity
+                through real-time data analysis.</p>
+            <ul>
+                <li><b>HARDWARE:</b> ESP32 / NodeMCU on breadboard</li>
+                <li><b>SENSORS:</b> Temperature &amp; moisture sensors embedded in concrete</li>
+                <li><b>FUNCTION:</b> Real-time monitoring of concrete curing conditions</li>
+                <li><b>GOAL:</b> Ensure optimal hydration for maximum structural integrity</li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">#IoT</span>
+                <span class="tag">#ESP32</span>
+                <span class="tag">#CivilTech</span>
+                <span class="tag">#Sensors</span>
+                <span class="tag">#SmartConcrete</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h3>DERMAMATCH AI - SMART HEALTHCARE SAVINGS</h3>
+            <div class="project-gallery">
+                <img src="assets/dermamatch_ui.png" alt="DermaMatch AI App UI" class="project-img">
+                <img src="dermamatch_ui.png" alt="How DermaMatch Works" class="project-img">
+            </div>
+            <p>An AI-powered "Price Matcher" developed using <b>Prompt Engineering</b> that helps users save 50-90% on
+                healthcare by identifying identical generic
+                alternatives to expensive brand-name medicines.</p>
+            <ul>
+                <li><b>CORE_TECH:</b> Prompt Engineering, AI Vision & Real-time Web Scraping</li>
+                <li><b>PROCESS:</b> Scans medicine labels to identify "Active Ingredients"</li>
+                <li><b>SAVINGS:</b> Searches Indian pharmacies (1mg, PharmEasy) for cheaper "dupes"</li>
+                <li><b>GOAL:</b> Make healthcare affordable by focusing on medicine, not branding</li>
+            </ul>
+            <div class="project-tags">
+                <span class="tag">#AI</span>
+                <span class="tag">#PromptEngineering</span>
+                <span class="tag">#HealthTech</span>
+                <span class="tag">#SmartSavings</span>
+                <span class="tag">#GenericMedicines</span>
+            </div>
+            <div style="text-align: right; margin-top: 10px;">
+                <a href="https://ai.studio/apps/96b2c3ff-cbc6-4af0-bdc2-48b6179981ae" target="_blank"
+                    style="text-decoration: none;">
+                    <button>> LAUNCH_APP</button>
+                </a>
+            </div>
+        </div>
+
+        <h2>> HOBBIES</h2>
+        <ul>
+            <li>Football</li>
+            <li>Video Games</li>
+        </ul>
+
+        <h2>> CONTACT</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> EMAIL: <a
+                    href="mailto:uday.madankar@gmail.com">uday.madankar@gmail.com</a></p>
+            <p><i class="fab fa-instagram"></i> INSTAGRAM: <a
+                    href="https://www.instagram.com/_uday_.m?igsh=MXFiZXJqMHZvcDRwOA==" target="_blank">_uday_.m</a></p>
+            <p><i class="fab fa-linkedin"></i> LINKEDIN: <a href="https://www.linkedin.com/in/uday-madankar-0114043a8"
+                    target="_blank">Uday Madankar</a></p>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>-- END OF FILE --</p>
+        <p>Created by Uday Madankar &copy; 2026</p>
+    </footer>
+
+</body>
+
+</html>
